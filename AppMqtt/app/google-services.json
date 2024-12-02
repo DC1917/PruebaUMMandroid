@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "278066615465",
+    "project_id": "fir-dc1917",
+    "storage_bucket": "fir-dc1917.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278066615465:android:560b2b407522b722c505b8",
+        "android_client_info": {
+          "package_name": "com.stomas.appmqtt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRsB1BCLljJI7xO9p2dhvZrpbzHeQyQs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

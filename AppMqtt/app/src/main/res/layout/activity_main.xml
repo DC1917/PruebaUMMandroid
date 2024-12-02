@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="720dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Ingreso de Videojuegos"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del juego"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/txtComp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la compañia desarrolladora"
+            android:minHeight="48dp"/>
+        
+        <Spinner
+            android:id="@+id/spRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Región"
+            android:minHeight="48dp"/>
+
+        <Spinner
+            android:id="@+id/spGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Género del juego"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensaje recibido"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+        
+        <EditText
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Ingrese una breve descripción"/>
+
+        <Button
+            android:id="@+id/botonEnviarMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMensaje"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Enviar Datos"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMensaje"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:text="Confirmar Envio"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMensaje"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:text="Cargar Datos"/>
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
